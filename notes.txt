@@ -1,0 +1,40 @@
+git and github
+---------------
+github
+----------
+1)store code
+2)share code
+3)website hosting
+4)version control system-storing in version
+-----------
+git- tools to do operation in git hub
+--------------------------
+remote repositpory : github  storage space
+git storage space: local repository
+system: local storage
+-------------------
+git operations=
+----------
+push: local repo to remote repo uploading updating.
+clone: remote repo to local repo,downloading.
+pull: remote repo to local ,dowloading updated version.
+-------------------------
+push= push structure.png
+------------------------
+
+
+git init=iee folder ll git nne initalize cheyyan
+git status=
+git add=used to add staging area
+select all= git add .
+select one= git add file name
+git commit= -m"initial commit"(message cumpolsory)
+git remote -v= using for check git and github connected.
+git push origin(variable) master.
+
+
+
+
+
+
+
