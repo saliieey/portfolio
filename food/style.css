@@ -1,0 +1,314 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 100px;
+    background-color: #ffeae0;
+}
+/* menu */
+.nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.nav .logo h1{
+    font-weight: 600;
+    font-family: 'Abril Fatface';
+    color: #000000;
+}
+.nav .logo b{
+    color: #ff511c;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    margin-right: 30px;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nav ul li a{ 
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-family: 'Abril Fatface';
+    font-size: 17px;
+}
+/* active */
+.nav ul .active::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #ff511c;
+    display: flex;
+    position: absolute;
+    /* margin-left: 10px; */
+    transition: 0.5s;
+    left: 0;
+}
+.nav ul .active:hover::after{
+    width: 100%;
+}
+/* input */
+.login a{
+    padding: 10px 20px;
+    /* cursor: pointer; */
+    font-weight: 600;
+    text-decoration: none;
+}
+.signin{
+    color: #ff511c;
+    /* background:transparent; */
+    border: none;
+}
+.signin:hover {
+    color: #000000;
+}
+.signup{
+    background-color: #ff511c;
+    color: #ffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.signup:hover{
+    color: #000000;
+}
+
+/* content */
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/* content text */
+/* right side */
+.content .content-left{
+    display: block;
+    width: 1005;
+
+}
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 30px;
+}
+.content .content-left .info p{
+    font-size: 23px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: 'Abril Fatface';
+
+}
+/* content */
+/* #button */
+.content .content-left a{
+    text-decoration: none;
+    padding: 10px 23px;
+    background-color: #ff511c;
+    color: #ffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'DM Serif Display', serif;
+}
+.content .content-left a:hover{
+    color: #000000;
+}
+/* #content image */
+.content .content-right{
+    display: block;
+    width: 100%;
+   
+
+}
+.content .content-right img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    user-select: none;
+    animation: rotate 10s linear infinite;
+   
+}
+/* #content */
+/* #animation */
+@keyframes rotate {
+    0%{
+        transform:rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* cards */
+.catagory{
+    width: 100%;
+    display: flex;
+    margin-bottom:50px ;
+    justify-content: center;
+}
+.catagory .list-items{
+    width: 90%;
+    position: relative;
+    margin-top:50px;
+
+}
+.catagory .list-items h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 70px;
+
+}
+.catagory .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.catagory .list-items .card{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #fff;
+    outline: 2px solid #faad96;
+}
+.catagory .card-list .card img{
+    width: 100px;
+    height: auto;
+    bottom: 163px;
+    left: 50px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 20px 20px #faad96;
+    border-radius: 50%;
+    
+
+}
+.catagory .card-list .card .food-title{
+    padding: 40px 0 10px;
+}
+.catagory .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'DM Serif Display', serif;
+    
+}
+.catagory .card-list .card .food-title a{
+    text-decoration: none;
+    color: #000000;
+}
+.catagory .card .desc-food p{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface';
+}
+.catagory .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catagory .card .price span .plus-icon{
+    color: #ff511c;
+    font-size: 20px;
+    cursor: pointer;
+}
+.cheading{
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.iconbar{
+    margin-top:2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+.icon:hover{
+   background-color: #fff;
+}
+.icon:hover a{
+    color: white;
+    animation: shake 0.75s infinite;
+}
+
+@keyframes shake {
+   10%{
+    transform: rotate(15deg);
+   }
+   20%{
+    transform: rotate(-15deg);
+   }
+   30%{
+    transform: rotate(15deg);
+   }
+   40%{
+    transform: rotate(-15deg);
+   }
+   
+
+   
+}
+.map .maph h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 50px;
+    margin-left: 68px;
+}
+.map .maph iframe{
+    margin-left: 60px;
+}
+.arrow {
+    
+    float: right;
+}
+/* .arrow:hover i{
+    color: #ff511c;
+} */
+/* scroll bar */
+/* ::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #ff511c;
+} */
